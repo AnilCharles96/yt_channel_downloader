@@ -14,6 +14,19 @@ Packages needed to run the program
 ```
 pip install -r requirements.txt
 ``` 
-Download the program 
+To download the program use git or download zip
+```
+git clone https://github.com/AnilCharles96/yt_channel_downloader.git
+```
 
- 
+# Running
+use cmd/terminal to run the program, make sure to change the directory towards the downloaded location
+```
+eg: cd c:/users/anil/desktop/yt_channel_downloader
+```
+use python to run the program
+```
+python yt_channel.py 'provide youtube channel here'
+
+eg: python yt_channel.py https://www.youtube.com/channel/UCQO8KW89UmUxltx8pQPrDRQ
+```
