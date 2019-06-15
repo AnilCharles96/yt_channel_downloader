@@ -20,11 +20,11 @@ git clone https://github.com/AnilCharles96/yt_channel_downloader.git
 ```
 
 # Running
-use cmd/terminal to run the program, make sure to change the directory towards the downloaded location
+Use cmd/terminal to run the program, make sure to change the directory towards the downloaded location
 ```
 eg: cd c:/users/anil/desktop/yt_channel_downloader
 ```
-use python to run the program
+Use python to run the program
 ```
 python yt_channel.py 'provide youtube channel here'
 
