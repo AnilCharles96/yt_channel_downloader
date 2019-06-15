@@ -43,7 +43,9 @@ class yt_downloader():
             
         except:
             
-                sys.exit()
+            # these can occur if not driver not found
+            sys.exit()
+
 
         self.playlist()
         self.playlist_details()
@@ -74,18 +76,18 @@ class yt_downloader():
             
             # chromedriver should be present in the working directory
             try:
+                
+                # operating system check
                 if os.name == 'nt':
                 
-                    # initializing webdriver for chrome
-                    
+                    # initializing chromedriver for windows
                     driver = webdriver.Chrome(os.getcwd() + '\chromedriver.exe' , chrome_options=options)
-                
-                        
+            
                 else:
-                
+                    
+                    # chromedriver for mac
                     driver = webdriver.Chrome(os.getcwd() + '/chromedriver' , chrome_options=options)
-                
-
+        
                 # to get the particular website
                 driver.get(url)
                 # download page source code
@@ -100,17 +102,10 @@ class yt_downloader():
                 print('\nchromedriver not found\n')
                 # exit from the program
                 sys.exit()
-            
-                
-
-        
-            
     
         else:
             
             print('\nplease provide a youtube channel\n')
-
-        
                     
         return soup
 
@@ -177,9 +172,12 @@ class yt_downloader():
             soup = self.grabber(url=each_playlist)
             # extracts playlist name from source code
             playlist_name = [content.contents[0].strip() for content in soup.find_all('a',class_='yt-simple-endpoint style-scope yt-formatted-string')][0]
-            # check if folder with playlist name exist
+            # finding path to playlist name folder, mac and windows path
             self.loc = os.path.join(self.path,playlist_name)
+            
+            # if path do not exist
             if not os.path.exists(self.loc):
+                
                 # create new folder with playlist name           
                 os.makedirs(self.loc)
             
@@ -195,6 +193,7 @@ class yt_downloader():
             
             # going through each yt video urls of a single playlist
             for video_url in playlist_video_urls_filtered:
+                
                 # calling download_video function with each url as parameter
                 self.download_video(video_url,playlist_name)
 
@@ -213,16 +212,16 @@ class yt_downloader():
         url = 'https://www.youtube.com' + url
         
         try:
-        
+            # youtube dl library for downloading video
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([url])
     
         except KeyboardInterrupt:
-            
+            # exit if there is any keyboard interrupt
             sys.exit()
         
         except:
-            
+            # can happen when video is private
             print('\n'+ playlist_name + '\nvideo unavailable skipping\n')
         
        
