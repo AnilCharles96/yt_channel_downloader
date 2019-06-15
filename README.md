@@ -6,12 +6,14 @@ If you are looking for a youtube video downloader that downloads the entire play
 
 
 # Installation
-Download python from the following link
+Download python from the following link and make sure to set the python path in environment variables.
 ```
 https://www.python.org/downloads/
 ```
 Packages needed to run the program
+```
+pip install -r requirements.txt
+``` 
+Download the program 
 
- ```
- pip install -r requirements.txt
- ``` 
+ 
