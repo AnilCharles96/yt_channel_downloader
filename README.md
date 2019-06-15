@@ -1,4 +1,4 @@
-# yt_channel_downloader
+# YT_Channel_Downloader
 A simple youtube channel playlist downloader 
 
 # Description
