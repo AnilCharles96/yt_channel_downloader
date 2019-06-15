@@ -2,7 +2,7 @@
 A simple youtube channel playlist downloader 
 
 # Description
-If you are looking for a youtube video downloader that downloads the entire playlist of a channel for offline watching then this is for you. Download videos of playlist and store them in their corresponding playlist name folder.
+If you are looking for a youtube video downloader that downloads the entire playlist of a channel for offline watching then this is for you. Download videos of playlist and store them in their corresponding playlist name folder. works on both windows and mac
 
 
 # Installation
