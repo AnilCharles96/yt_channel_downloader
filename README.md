@@ -4,6 +4,6 @@ If you are looking for a youtube video downloader that downloads the entire play
 # Installation
 Packages needed to run the program
 
-  '''
-  pip install -r requirements.txt
-  ```
+ ```
+ pip install -r requirements.txt
+ ``` 
