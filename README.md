@@ -27,6 +27,7 @@ eg: cd c:/users/anil/desktop/yt_channel_downloader
 Use python to run the program
 ```
 python yt_channel.py 'provide youtube channel here'
-```
+
 eg: python yt_channel.py https://www.youtube.com/channel/UCQO8KW89UmUxltx8pQPrDRQ
+```
 
