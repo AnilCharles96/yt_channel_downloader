@@ -10,14 +10,14 @@ Download python from the following link and make sure to set the python path in 
 ```
 https://www.python.org/downloads/
 ```
-Packages needed to run the program
-```
-pip install -r requirements.txt
-``` 
 To download the program use git or download zip
 ```
 git clone https://github.com/AnilCharles96/yt_channel_downloader.git
 ```
+Packages needed to run the program
+```
+pip install -r requirements.txt
+``` 
 
 # Running
 Use cmd/terminal to run the program, make sure to change the directory towards the downloaded location
