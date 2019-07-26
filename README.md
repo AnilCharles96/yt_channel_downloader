@@ -13,6 +13,8 @@ https://www.python.org/downloads/
 To download the program use git or download zip
 ```
 git clone https://github.com/AnilCharles96/yt_channel_downloader.git
+
+https://github.com/AnilCharles96/yt_channel_downloader.git
 ```
 Packages needed to run the program
 ```
