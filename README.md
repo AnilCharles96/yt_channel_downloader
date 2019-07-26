@@ -14,7 +14,7 @@ To download the program use git or download zip
 ```
 git clone https://github.com/AnilCharles96/yt_channel_downloader.git
 
-https://github.com/AnilCharles96/yt_channel_downloader.git
+https://github.com/AnilCharles96/yt_channel_downloader/archive/master.zip
 ```
 Packages needed to run the program
 ```
